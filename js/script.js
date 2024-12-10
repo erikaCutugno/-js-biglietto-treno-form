@@ -19,7 +19,7 @@ function getRndNumber(min, max) {
 
 formElm.addEventListener("submit", function(event){
     event.preventDefault();
-    passengerElm.innerHTML = fullNameElm.value;
+    passengerElm.innerHTML = `<strong>${fullNameElm.value}</strong>`;
     const price = 0.21 * userKmElm.value;
 
 //- va applicato uno sconto del 20% per i minorenni

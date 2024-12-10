@@ -9,17 +9,42 @@
 /*----GENERAL----*/
 
 .container{
-    max-width: 53.125rem;
+    max-width: 50rem;
     margin-left: auto;
     margin-right: auto;
-    text-align: center;
+    padding: 1.25rem;
+    
 }
 
 body{
     background-color: #b91547;
 }
-form{
+#form{
+    margin-top: 1.25rem;
     background-color: white;
+    text-align: center;
+    color: #b91547;
+    border-radius: .5rem;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;;
+}
+.space{
+    padding: 1.25rem;
+}
+.btn{
+    margin-top: 1.875rem;
+    padding: .25rem;
+    color: #b91547;
+    background-color: #c5c5c5;
+    border: .0625rem solid #757575;
+    border-radius: .375rem;
+    cursor: pointer;
+}
+/*----TYPHOGRAPHY----*/
+
+h1{
+    color: white;
+    text-align: center;
+    margin-top: 1.25rem;
 }
 
 /*----MAIN----*/
@@ -29,9 +54,26 @@ form{
     justify-content: center;
     gap: 1.875rem;
 }
+#fullName, #userKm, #userAge{
+    border: .0625rem solid #b91547;
+    border-radius: .25rem;
+    text-align: center;
+}
+p{
+    margin-bottom: 1rem;
+}
 .hidden{
     display: none;
 }
 #card > .container{
     background-color: white;
+    text-align: left;
+}
+table{
+    border-top: .0625rem solid #757575 ;
+    border-bottom: .0625rem solid #757575 ;
+    border-collapse: collapse;
+}
+.user{
+    background-color:#757575 ;
 }

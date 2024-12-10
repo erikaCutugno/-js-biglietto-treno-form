@@ -10,8 +10,8 @@
     <header>
         <h1>CALCOLA IL PREZZO DEL TUO BIGLIETTO</h1>
     </header>
-    <main class="container">
-        <form id="form" action="">
+    <main>
+        <form id="form" action="" class="container">
             <div class="info">
                 <div><p>Nome Cognome</p><input id="fullName" value="" type="text" required></div>
                 <div><p>km da percorrere</p><input id="userKm" type="number" required></div>
@@ -25,28 +25,28 @@
                 </div>
             </div>    
             <div>
-                <button type="submit">Genera</button>
-                <button type="reset">Annulla</button>
+                <button type="submit" class="btn"><strong>Genera</strong></button>
+                <button type="reset" class="btn"><strong>Annulla</strong></button>
             </div>
         </form>
         <section id="card" class="hidden">
             <h1>IL TUO BIGLETTO</h1>
             <div class="container">
-                <h3>DETTAGLIO PASSEGERI</h3>
-                <table>
+                <h3>DETTAGLIO PASSEGGERI</h3>
+                <table class="space">
                     <tr>
-                        <th>NOME PASSEGERO</th>
-                        <th>Offerta</th>
-                        <th>Carrozza</th>
-                        <th>Codice CP</th>
-                        <th>Costo biglietto</th>
+                        <th class="space user">NOME PASSEGGERO</th>
+                        <th class="space">Offerta</th>
+                        <th class="space">Carrozza</th>
+                        <th class="space">Codice CP</th>
+                        <th class="space">Costo biglietto</th>
                     </tr>
                     <tr>
-                        <td id="passenger"></td>
-                        <td id="offer"></td>
-                        <td id="cab"></td>
-                        <td id="code"></td>
-                        <td id="price"></td>
+                        <td id="passenger" class="space user"></td>
+                        <td id="offer" class="space"></td>
+                        <td id="cab" class="space"></td>
+                        <td id="code" class="space"></td>
+                        <td id="price" class="space"></td>
                     </tr>
                 </table>
             </div>
