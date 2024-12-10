@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <h1>CALCOLA IL PREZZO DEL TUO BIGLIETTO</h1>
+    </header>
+    <main class="container">
+        <form id="form" action="">
+            <div class="info">
+                <div><p>Nome Cognome</p><input id="fullName" value="" type="text" required></div>
+                <div><p>km da percorrere</p><input id="userKm" type="number" required></div>
+                <div>
+                    <p>Fascia d'età</p>
+                    <select name="age" id="userAge">
+                        <option value="Maggiorenne">Maggiorenne</option>
+                        <option value="Minorenne">Minorenne</option>
+                        <option value="over 65">Over 65</option>
+                    </select>
+                </div>
+            </div>    
+            <div>
+                <button type="submit">Genera</button>
+                <button type="reset">Annulla</button>
+            </div>
+        </form>
+        <section id="card" class="hidden">
+            <h1>IL TUO BIGLETTO</h1>
+            <div class="container">
+                <h3>DETTAGLIO PASSEGERI</h3>
+                <table>
+                    <tr>
+                        <th>NOME PASSEGERO</th>
+                        <th>Offerta</th>
+                        <th>Carrozza</th>
+                        <th>Codice CP</th>
+                        <th>Costo biglietto</th>
+                    </tr>
+                    <tr>
+                        <td id="passenger"></td>
+                        <td id="offer"></td>
+                        <td id="cab"></td>
+                        <td id="code"></td>
+                        <td id="price"></td>
+                    </tr>
+                </table>
+            </div>
+        </section>
+    </main>
+    <script src="js/script.js"></script>
+</body>
+</html>
