@@ -9,7 +9,7 @@
 /*----GENERAL----*/
 
 .container{
-    max-width: 50rem;
+    max-width: 48.75rem;
     margin-left: auto;
     margin-right: auto;
     padding: 1.25rem;
@@ -28,8 +28,9 @@ body{
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;;
 }
 .space{
-    padding: 1.25rem;
+    padding: 1rem 1.25rem;
 }
+
 .btn{
     margin-top: 1.875rem;
     padding: .25rem;
@@ -62,6 +63,9 @@ h1{
 p{
     margin-bottom: 1rem;
 }
+.btn-reset{
+    margin-left: .5rem;
+}
 .hidden{
     display: none;
 }
@@ -76,4 +80,7 @@ table{
 }
 .user{
     background-color:#757575 ;
+}
+th{
+    vertical-align: text-top;
 }
