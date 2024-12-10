@@ -3,6 +3,7 @@ const formElm = document.getElementById("form")
 const fullNameElm = document.getElementById("fullName")
 const userKmElm = document.getElementById("userKm")
 const userAgeElm = document.getElementById("userAge")
+const btnResetElm = document.querySelector(".btn-reset")
 // DOM HIDDEN
 const cardElm = document.getElementById("card")
 const passengerElm = document.getElementById("passenger")
@@ -40,4 +41,8 @@ formElm.addEventListener("submit", function(event){
     cabElm.innerHTML = getRndNumber(1,10);
     codeElm.innerHTML = getRndNumber(90000,99999);
     cardElm.classList.remove("hidden");
+})
+
+btnResetElm.addEventListener("click",function(){
+    cardElm.classList.add("hidden");
 })
